@@ -41,6 +41,8 @@
 
     <a href="#inscricao">Inscrição</a>
 
+    <a href="login.html">Login</a>
+
 </nav>
 
 <main>
@@ -77,9 +79,11 @@
 
     <img
 
-        src="https://via.placeholder.com/600x300?text=DevWeb+Conference"
+        src="img/pexels-freestockpro-9275222.jpg"
 
         alt="Auditório preparado para a DevWeb Conference"
+
+        width="300" height="200"
 
     >
 
@@ -279,107 +283,50 @@
 
     <form>
 
- 
-
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        
         <p>
-
             <label for="nome">Nome:</label>
-
- 
-
-            <input
-
-                type="text"
-
-                id="nome"
-
-                name="nome"
-
-                required
-
-            >
-
+            <input type="text" id="nome" name="nome" required>
         </p>
 
- 
-
         <p>
-
             <label for="email">E-mail:</label>
-
- 
-
-            <input
-
-                type="email"
-
-                id="email"
-
-                name="email"
-
-                required
-
-            >
-
+            <input type="email" id="email" name="email" required>
         </p>
 
- 
-
         <p>
-
             <label for="senha">Crie uma senha:</label>
-
- 
-
-            <input
-
-                type="password"
-
-                id="senha"
-
-                name="senha"
-
-                required
-
-            >
-
+            <input type="password" id="senha" name="senha" required>
         </p>
+    </fieldset>
 
- 
+    <fieldset>
+        <legend>Preferências do Evento</legend>
 
         <p>
-
-            <input
-
-                type="checkbox"
-
-                id="novidades"
-
-                name="novidades"
-
-            >
-
- 
-
-            <label for="novidades">
-
-                Desejo receber novidades sobre o evento
-
-            </label>
-
+            <label for="trilha">Escolha uma trilha:</label>
+            <select id="trilha" name="trilha">
+                <option value="Desenvolvimento Front-end">Desenvolvimento Front-end</option>
+                <option value="UX e Interfaces">UX e Interfaces</option>
+                <option value="Tecnologias Web">Tecnologias Web</option>
+            </select>
         </p>
 
- 
+        <p>
+            <input type="checkbox" id="novidades" name="novidades">
+            <label for="novidades">
+                Desejo receber novidades sobre o evento
+            </label>
+        </p>
+    </fieldset>
 
-        <button type="submit">
+    <button type="submit">
+        Realizar inscrição
+    </button>
+</form>
 
-            Realizar inscrição
-
-        </button>
-
- 
-
-    </form>
 
 </section>
 
